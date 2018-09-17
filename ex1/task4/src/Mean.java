@@ -34,7 +34,6 @@ public class Mean {
     }
     private static double geometricMean(int[] values){
         double total = Arrays.stream(values).asDoubleStream().reduce(1,(a,b)-> a*b);
-
         return Math.pow(total,1/(double)values.length);
     }
 

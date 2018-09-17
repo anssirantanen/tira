@@ -16,8 +16,6 @@ public class Sort {   public static void main(String[] args) {
     System.out.println(Arrays.toString(strArr));
 }
 
-
-
     private static Optional<Stream<String>> toStringStream(String fileName) {
         Optional<Stream<String>> textStream = Optional.empty();
         try{

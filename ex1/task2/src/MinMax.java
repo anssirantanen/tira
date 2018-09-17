@@ -23,6 +23,7 @@ public class MinMax {
     public static OptionalInt minCheat(int[] values){
         return Arrays.stream(values).min();
     }
+
     private static int max(int[] values){
         return Arrays.stream(values)
                 .reduce(Integer.MIN_VALUE,(a,b)-> a>b?a:b);

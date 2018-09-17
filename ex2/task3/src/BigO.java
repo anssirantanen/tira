@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class BigO {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("n?");
         int n = Integer.valueOf(input.next());
         System.out.println(n);
         System.out.println("6n");
@@ -26,7 +27,7 @@ public class BigO {
     }
     private static int fac(int n){
         int acc = 1;
-        for(int i =0;i<=n;i++){
+        for(int i =1;i<=n;i++){
             acc=acc*i;
         }
         return acc;
