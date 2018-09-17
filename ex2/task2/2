@@ -1,0 +1,19 @@
+(a) 6n -
+(b) 3 log n -
+(c) √ n log n -
+ (d) 5n^2 -
+(e) √ n -
+(f) 42 -
+ (g) n! -
+ (h) 7 log log n-
+ (i) n log n  -
+
+42 :(vakio),
+7 log log n:  (log kasvu log n:stä),
+3 log n :(log n, kasvaa 1 yksikön per potenssi) ,
+√n :(n^½,  kasvu  puolittuu per yksikkö) ,
+√n log n :(log n> 1 , kun n>2)
+6n :(n, lineaarinen),
+n log n:  (log n >1, kun n > 2),
+5n^2 :(n^2. kasvu neliössä) ,
+n! :(Kertoma)
