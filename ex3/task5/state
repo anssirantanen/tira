@@ -1,0 +1,14 @@
+a)  S.push(a); S.push(b); S.push(c); S.pop ();
+a => b,a =>  c,b,a => b,a
+
+b) S.push(a); S.push(S.top()); S.push(b); S.push(S.pop()); S.push(S.top());
+  a => a,a => b,a,a => b,a,a => b,b,a,a
+
+c) Q.enqueue(a); Q.dequeue(); Q.enqueue(b); Q.enqueue(c);
+a =>  => b => b,c
+
+d) S.push(a); Q.enqueue(b); Q.enqueue(S.top()); S.push(Q.dequeue()); S.pop();
+   S.push(Q.front());
+
+s)   a => a => a   => b,a => a => a,a
+q)     => b => b,a =>  a  => a => a
