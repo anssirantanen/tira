@@ -1,0 +1,15 @@
+
+
+Algorithm MovingAverage(stream, n)
+    in: stream of values stream, windows size n
+    out: stream of windowed average values
+    queue <- new queue(n)
+    queue fill 0
+    sum <- 0
+    newValue <- stream take 1
+    queue.append(newValue)
+    sum <- sum + newValue
+    sum <- sum - queue.deque
+    return sum / n
+
+

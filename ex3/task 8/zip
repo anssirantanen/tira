@@ -1,0 +1,14 @@
+
+Algorithm zip(a,b)
+    in: a queue,b queue
+    out <- new queue
+    carry <- 0
+    while a not empty or b not empty do
+        valA <- a dequeue or 0
+        valB <- b dequeue or 0
+        sum <- a+b+carry
+        carry <- 0
+        digit <- sum modulo 10
+        if sum > 10 then
+            carry <- floor(sum / 10)
+    return out

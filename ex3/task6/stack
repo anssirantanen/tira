@@ -1,0 +1,12 @@
+Algorithm enque(stack, element):
+    in: stored stack, element
+    support <- new stack
+    while stack.top do
+        support.push(stack.pop)
+    stack.push(element)
+    while support.top do
+        stack.push(support.pop)
+
+Algorithm dequeue(stack)
+    out: dequeued element
+    return stack.pop
