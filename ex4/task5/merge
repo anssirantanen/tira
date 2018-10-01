@@ -1,0 +1,28 @@
+function merge(a,b)
+    in: lists a,b
+    out: merged list
+    merge <- new list
+            hA <- a.head
+            hB <- b.head
+    while hA & Hb do
+        if hA > hB then
+            merge.push(hB)
+            merge.push(hA)
+        else
+             merge.push(hA)
+             merge.push(hB)
+        hA <- hA.next
+        hB <- hB.next
+    if hA
+        push(hA,merge)
+    else if hB
+        push(hB, merge)
+    return merge
+
+function push(from, to)
+    in: list from, to
+    e <- from.next
+    while e do
+        to.push(e)
+
+

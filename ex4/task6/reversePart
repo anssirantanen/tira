@@ -1,0 +1,23 @@
+
+function reversePart(list,start,end)
+    in: list linked list, start star index, end end index
+    stack <- new stack
+    shift <- 0
+    elem <- list.head
+    while shift != start
+        shift++
+        elem <- elem.next
+    cut <- elem
+    elem <- elem.next
+    tail
+    while shift <= end do
+        stack.push elem
+        elem <- elem.next
+        tail <- elem
+        shift++
+    while not stack empty do
+        cut.next <- stack pop
+        cut <- cut.next
+    cut.next <- tail
+    return list
+

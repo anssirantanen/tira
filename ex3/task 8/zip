@@ -9,6 +9,6 @@ Algorithm zip(a,b)
         sum <- a+b+carry
         carry <- 0
         digit <- sum modulo 10
-        if sum > 10 then
+        if sum >= 10 then
             carry <- floor(sum / 10)
     return out

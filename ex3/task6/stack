@@ -8,5 +8,6 @@ Algorithm enque(stack, element):
         stack.push(support.pop)
 
 Algorithm dequeue(stack)
+    in: stack to be dequed
     out: dequeued element
     return stack.pop

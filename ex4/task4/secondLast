@@ -1,0 +1,12 @@
+
+function secondLast(list)
+    in: Linked list
+    out: second last elem
+    if list length = 0  or not list.head.next then return null
+    e <- list.head
+    while e.next do
+        t <- e.next
+        if not t.next then
+            return e
+        else then
+            e <- t
