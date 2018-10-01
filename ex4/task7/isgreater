@@ -1,0 +1,23 @@
+
+function isGreater(a,b)
+    aAcc <- 0
+    bAcc <- 0
+    n <- 0
+    aNode <- a.head
+    bNode <- b.head
+    while !a.next and  !b.next do
+        aTop <- aNode.val or 0
+        bTop <- aNode.val or 0
+        if aTop = "-" then
+            aAcc = -1 * aAcc
+        else
+            aAcc <- aAcc + a.pop * pow(10, n)
+        if bTop = "-" then
+            bAcc = -1 * bAcc
+        else
+            bAcc <- bAcc + b.pop * pow(10, n)
+
+        aNode <- aNode.next
+        bNode <- bNode.next
+        n++
+    return aAcc > bAcc
