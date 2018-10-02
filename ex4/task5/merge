@@ -20,9 +20,10 @@ function merge(a,b)
     return merge
 
 function push(from, to)
-    in: list from, to
-    e <- from.next
-    while e do
+    in: node from, to
+    while e != null do
         to.push(e)
+        e <- e.next
+
 
 

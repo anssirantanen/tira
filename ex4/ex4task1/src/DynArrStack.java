@@ -76,12 +76,11 @@ class DynArrStack
 	 */
 	public Object pop (){
 		/* Exercise, add your implementation here. */
-    if(n == 0) {
+    if(n == 0){
         return null;
     }
     var elem = A[n-1];
     n--;
-        System.out.println("n: "+n+" "+"N:"+N);
     if((n == N/4)&& (N>=2)){
         A = Arrays.copyOf(A,N/2);
         N = N/2;

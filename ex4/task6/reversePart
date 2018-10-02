@@ -1,10 +1,10 @@
 
 function reversePart(list,start,end)
-    in: list linked list, start star index, end end index
+    in: list linked list, start index, end index
     stack <- new stack
     shift <- 0
     elem <- list.head
-    while shift != start
+    while shift != start do
         shift++
         elem <- elem.next
     cut <- elem
