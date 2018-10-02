@@ -9,7 +9,7 @@ function reversePart(list,start,end)
         elem <- elem.next
     cut <- elem
     elem <- elem.next
-    tail
+    tail <- null
     while shift <= end do
         stack.push elem
         elem <- elem.next
