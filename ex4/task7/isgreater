@@ -11,11 +11,11 @@ function isGreater(a,b)
         if aTop = "-" then
             aAcc = -1 * aAcc
         else
-            aAcc <- aAcc + a.pop * pow(10, n)
+            aAcc <- aAcc + aTop * pow(10, n)
         if bTop = "-" then
             bAcc = -1 * bAcc
         else
-            bAcc <- bAcc + b.pop * pow(10, n)
+            bAcc <- bAcc + bTop * pow(10, n)
 
         aNode <- aNode.next
         bNode <- bNode.next
