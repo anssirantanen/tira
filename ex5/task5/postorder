@@ -1,0 +1,30 @@
+algorithm postOrderTraversal(rootNode)
+    in: b-tree
+    stack <- new stack
+    previous <- null
+    cursor <- null
+    stack.push rootNode
+
+    while stack.nonEmpty do
+        current <- stack.top
+        if prev = null  // traversal start
+        || previous.left = current // last shift was down
+        || previous.right = current // last shift was down
+        then
+            if current.left != null then
+                stack.push(current.left) // move 1 down left
+            else if stack != null then
+                stack.push current.right // move 1 down right
+            else then
+                print current.value // leaf print value
+                stack.pop //discard printed value
+        else if current.left = previous then //came up from left branch
+            if current.right != null // continue from right branch
+                stack.push(current.right)
+            else //
+                print(current.value)
+                stack.pop
+        else if current.right = previous then
+            print(current.value) // came from right can print
+            stack.pop
+        previous <- current // keep previous for backtracking
