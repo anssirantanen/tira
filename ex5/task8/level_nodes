@@ -1,0 +1,38 @@
+algorithm levelNodes(rootNode,n)
+    in: b-tree, rootNode
+        tree level, n
+
+    out: count of nodes in tree level of n
+
+    stack <- new stack
+    previous <- null
+    cursor <- null
+    stack.push rootNode
+
+    nodeCount <- 0
+
+    while stack.nonEmpty do
+        current <- stack.top
+        if stack.size = n then
+            nodeCount++
+            stack.pop
+        else if prev = null  // traversal start
+        || previous.left = current // last shift was down
+        || previous.right = current // last shift was down
+        || stack.size = n
+        then
+            if current.left != null then
+                stack.push(current.left) // move 1 down left
+            else if stack != null then
+                stack.push current.right // move 1 down right
+            else then
+                stack.pop //discard printed value
+        else if current.left = previous then //came up from left branch
+            if current.right != null // continue from right branch
+                stack.push(current.right)
+            else //
+                stack.pop
+        else if current.right = previous then
+            stack.pop
+        previous <- current // keep previous for backtracking
+    return nodeCount
