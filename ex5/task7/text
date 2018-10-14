@@ -3,7 +3,7 @@ algorithm postOrderTraversal(rootNode)
     stack <- new stack
     previous <- null
     cursor <- null
-    rootC <- 0
+    leafC <- 0
     totalC <- 0
     hMax <- 0
     stack.push rootNode
@@ -19,11 +19,11 @@ algorithm postOrderTraversal(rootNode)
             else if stack != null then
                 stack.push current.right // move 1 down right
             else then
-                rootC++
+                leafC++
                 totalC++
                 if stack.size > hMax then
                     hMax <- stack.size
-                stack.pop //discard printed value
+                stack.pop
         else if current.left = previous then //came up from left branch
             if current.right != null // continue from right branch
                 stack.push(current.right)
@@ -34,3 +34,4 @@ algorithm postOrderTraversal(rootNode)
             total.c++
             stack.pop
         previous <- current // keep previous for backtracking
+    return (leafC, totalC, hmax)

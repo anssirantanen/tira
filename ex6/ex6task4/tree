@@ -1,0 +1,11 @@
+a) A, B, D, E, F, G, C in preorder and D, F, G, E, B, C, A in postorder?
+        A
+      B   C
+    D  E
+      F G
+
+b) B, A, D, C, F, E, G in inorder and B, D, F, G, E, C, A in postorder?
+        A
+      B   C
+        D   E
+           F G

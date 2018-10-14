@@ -1,0 +1,9 @@
+Binääri puun minimi korkeus on 2^n solmua 1,2,4..jne
+muodostuu kun solmu on joukon mediaani ja lapset solmun arvon ja ylä/ala arvon mediaani.
+esim joukko 1 ... n
+juuri on median(1,n)
+vasen on median(1,median(1,n)) jne.
+
+puun maksimi korkeus on n solmua.
+Tapahtuu kun puuhun lisätään dataa aina samaan suuntaan esim. vasemmalle
+ (syötteenä esim järjestetty joukko, josta juureksi valitaan ensimmäinen luku)

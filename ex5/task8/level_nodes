@@ -26,7 +26,7 @@ algorithm levelNodes(rootNode,n)
             else if stack != null then
                 stack.push current.right // move 1 down right
             else then
-                stack.pop //discard printed value
+                stack.pop
         else if current.left = previous then //came up from left branch
             if current.right != null // continue from right branch
                 stack.push(current.right)
