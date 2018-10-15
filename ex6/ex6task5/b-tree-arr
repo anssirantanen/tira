@@ -1,0 +1,62 @@
+function Root(arr)
+    in: array representation of b-tree
+    out: root node of tree or null
+    return arr[1] || null
+
+function parent(arr, node)
+    in: array representation of b-tree, node
+    out: parent element or null
+    index <- ownIndex(arr,node) // see below
+    if index = null then
+        throw err "not part of tree"
+    if index = 1
+        throw err "node is a root"
+    if index % 2 = 0 then //left node
+        parent <- (index/2)
+    else then
+        parent <- (index -1 / parent)
+    if parent = null
+        thor err not an b tree
+    return parent
+
+function leftChild(arr, elem)
+    in: array representation of b-tree, node
+    out: left child node or null
+    index <- ownIndex(arr, elem)
+    child <- 2*index
+    if child >= arr.size then
+        throw err out of bounds
+    return arr[child]
+
+function rightChild(arr, elem)
+    in: array representation of b-tree, node
+    out: left child node or null
+    index <- ownIndex(arr, elem)
+    child <- 2*index +1
+    if child >= arr.size then
+        throw err out of bounds
+    return arr[child]
+
+function isInternal(arr,elem)
+    in: array representation of b-tree, node
+    out: boolean
+   left <- leftChild(arr,elem)
+   right <- RightChild(arr,elem)
+   return (left != null) || (right != null)
+
+function isExternal(arr,elem)
+    in: array representation of b-tree, node
+    out: if leaf node
+    return !isInternal(arr,elem)
+
+function isRoot(arr,elem)
+    in: array representation of b-tree, node
+    out: if node is root
+    return arr[1] && arr[1].key = elem.key
+function ownIndex(arr, elem)
+    in: array representation of b-tree, node
+    out index of node
+    for i=1; i<arr.size:i++ do
+        if arr[i].key = node.key then
+            return  index <- i
+    return null
