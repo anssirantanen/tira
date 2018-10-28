@@ -1,0 +1,16 @@
+insertion
+
+insert(k,v):
+    h = hash(k)
+    insert(k,v) into next available slot in bucket h
+    if bucket h overflows change hashing.
+find(k):
+    h = hash(k)
+    find bucket h
+    compare k to bucket h's k values or end the values
+delete(k):
+    h =hash(k)
+    find bucket h
+    find matching k in bucket
+    delete k row
+    move last row from bucket h into deleted slot
