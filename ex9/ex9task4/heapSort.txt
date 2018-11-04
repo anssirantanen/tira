@@ -1,0 +1,33 @@
+
+
+function heapSort(arr)
+    in: array to be sorted
+
+    if arr.length = 1 then
+        return
+
+    //create max heap from array
+    //last elements parent index (N-1)/2
+    cursor <- (arr.length -2)/2
+
+    //assume that array is heap with wrong ordering
+    //reorder heap by row by row starting from second last row
+    //second last row is first row where sift can happen
+    while(cursor >= 0) do
+        perlocateDown(arr, cursor) // assuming that perlocate know shift rules
+        cursor--
+    end while
+    // array is now max heap where 0 is root
+
+    //unwrapping heap
+    heapTail <- arr.length -1
+    //largest values is in heaps root
+    //simulate heap removal where discarded values goes to deleted element place
+    while heapTail > 0 do
+        temp <- arr[0]
+        arr[0] <- arr[heapTail]
+        arr[heapTail] <- temp
+        heapTail --
+        perlocateDown(arr, 0)
+    end while
+

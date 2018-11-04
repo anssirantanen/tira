@@ -1,0 +1,19 @@
+7, 9, 6, 4, 0, 1, 2, 5,3, 8
+merge sort:
+breaking into 1 element sets
+7:9:6:4:0:1:2:5:3:8
+merge sets with adjacent sets
+7,9:4,6:0,1:2,5:3,8
+continue until 1 set left
+0,1,2,3,4,5,6,7,8,9
+quick sort:
+pick pivot point:
+pick 1
+move values into correct side of pivot =>
+0   1   2..9
+repeat pivoting in partitions until each partition set <=2
+merge these partitions until 1 partition left
+in merging left and right partitions are in order.
+
+
+
