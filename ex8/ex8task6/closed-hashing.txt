@@ -1,9 +1,10 @@
-insertion
+closed hashing:
+
 
 insert(k,v):
     h = hash(k)
     insert(k,v) into next available slot in bucket h
-    if bucket h overflows change hashing.
+    if bucket h overflows upscale hashing.
 find(k):
     h = hash(k)
     find bucket h

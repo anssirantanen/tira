@@ -8,7 +8,7 @@ class MinHeapTest
 	// comment the next lines the other way around if you wish to 
 	// test the heap 
 	// development aid (make the number smaller at first)
-	//doRandomInsertsAndExtract (20);
+	doRandomInsertsAndExtract (20);
 	// testing
 	 testHeap (10);
     }
