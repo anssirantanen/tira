@@ -1,0 +1,5 @@
+-> in arr values
+-> shuffle arr
+-> traverse arr
+-> if inorder end
+-> else repeat
