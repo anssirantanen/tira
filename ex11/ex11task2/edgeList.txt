@@ -1,0 +1,13 @@
+[
+ab,ad,
+bc,be,
+ca,
+df,dj,
+ej,
+fg,
+gd,
+hf,hg,
+ih,ik,
+ji,
+kk
+]

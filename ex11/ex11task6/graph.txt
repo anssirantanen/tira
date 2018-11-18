@@ -1,0 +1,26 @@
+a) Form some subgraph of at least 3 nodes, which is a tree.
+   a->b->c->d
+   b
+   c->e
+   d
+
+b) Form some subgraph of at least 6 nodes and 3 edges, which is a forest.
+g->j->f
+j->l
+f
+l->k->h
+k
+h
+c) Form a subgraph of the graph, which doesn’t have cycles, but has as
+many edges as possible.
+a->b->c->d
+b->j
+c->e
+d
+j->g->l
+g
+l->k->h
+h
+k->i
+i->f
+f

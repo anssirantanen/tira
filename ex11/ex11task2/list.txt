@@ -1,0 +1,11 @@
+a->b->d
+b->c->e
+c->a
+d->f->j
+e->j
+f->g
+g->d
+h->f->g
+j->i
+k->k
+l

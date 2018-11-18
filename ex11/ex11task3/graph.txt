@@ -1,0 +1,7 @@
+a) Is the graph connected?
+no,l
+b) Is the graph a tree, a forest or neither ?
+neither a to j via b,d
+c) Give two different directed paths between nodes C and K.
+c,a,b,e,j,i,k
+c,a,d,j,i,k

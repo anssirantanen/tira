@@ -1,0 +1,13 @@
+a)
+a->b
+b->c
+c->a
+b)
+abce
+dfghji
+k
+c)
+a,b,c
+d,f,g
+d,j,i,h,g
+d,j,i,h,f,g
