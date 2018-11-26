@@ -1,6 +1,6 @@
 
 public class Matrix {
-    private int size n;
+    private int size;
     private boolean[][] matrix;
     public Matrix(int size){
         this.size = size;
@@ -12,7 +12,7 @@ public class Matrix {
     public void removeEdge(int from ,int to){
         matrix[from][to] = false;
     }
-    public boolean hasEdge(int from, to){
+    public boolean hasEdge(int from, int to){
         return matrix[from][to];
     }
 }

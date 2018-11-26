@@ -13,6 +13,9 @@ public class EdgeList {
     public boolean removeEdge(){
         return true;
     }
+    public int size(){
+        return edges.size();
+    }
     private class Edge {
         private int to;
         private int from;

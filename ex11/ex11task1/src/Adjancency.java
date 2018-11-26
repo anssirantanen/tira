@@ -18,4 +18,7 @@ public class Adjancency {
     public boolean hasEdge(int from, int to){
         return false;
     }
+    public  int size(){
+        return size;
+    }
 }
